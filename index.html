@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>Todo Done</h1>
+      <p>Keep it up!</p>
+      <div class="progress-circle">
+        <div class="circle">
+          <span id="progressCount">0/0</span>
+        </div>
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Write your task">
+      <button id="addBtn">+</button>
+    </div>
+
+    <!-- Added status message here -->
+    <div id="statusMessage" class="status-message">Add some tasks!</div>
+
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
